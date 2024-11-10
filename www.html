@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: #333;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #8f94fb;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 3rem 0 2rem;
+            color: #fff;
+        }
+        .game-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 3rem;
+        }
+        .game-card {
+            background: #fff;
+            border-radius: 15px;
+            width: 280px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #6e70e0, #acb1fa);
+        }
+        .game-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.7rem;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .game-card:hover h3 {
+            color: #fff;
+        }
+        .game-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            transition: color 0.3s;
+        }
+        .game-card:hover p {
+            color: #f0f0f0;
+        }
+        .game-card a {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background-color: #4e54c8;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+        .game-card a:hover {
+            background-color: #8f94fb;
+        }
+        .special-event {
+            background: #ff5f6d;
+            background: linear-gradient(135deg, #ff9966, #ff5f6d);
+            color: #fff;
+        }
+        .special-event:hover {
+            background: linear-gradient(135deg, #ff7b92, #ff3a4d);
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #ccc;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.875rem;
+            border-top: 3px solid #4e54c8;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Hub</h1>
+        <p>Explore our collection of games and seasonal events!</p>
+    </header>
+
+    <section class="game-gallery">
+        <h2 class="section-title">Games</h2>
+        <!-- Game 1: Flash Game -->
+        <div class="game-card">
+            <h3>Flash Game</h3>
+            <p>Step into the fast-paced world of Flash. Use your super speed to overcome challenges and defeat enemies!</p>
+            <a href="https://giorgikevlishvily.github.io/open/flash.html" target="_blank">Play Now</a>
+        </div>
+        
+        <!-- Game 2: DC Game -->
+        <div class="game-card">
+            <h3>DC Game</h3>
+            <p>Join forces with DC's greatest heroes to battle villains and save the world in thrilling adventures.</p>
+            <a href="https://giorgikevlishvily.github.io/open/DC.html" target="_blank">Play Now</a>
+        </div>
+        
+        <!-- Game 3: Naruto Game -->
+        <div class="game-card">
+            <h3>Naruto Game</h3>
+            <p>Enter the ninja world of Naruto! Train, battle, and protect the Hidden Leaf Village from powerful foes.</p>
+            <a href="https://giorgikevlishvily.github.io/open/Naruto.html" target="_blank">Play Now</a>
+        </div>
+        
+        <!-- Game 4: Marvel Game -->
+        <div class="game-card">
+            <h3>Marvel Game</h3>
+            <p>Step into the Marvel Universe and take on missions as your favorite superhero to protect the planet.</p>
+            <a href="https://giorgikevlishvily.github.io/open/marvel.html" target="_blank">Play Now</a>
+        </div>
+        
+        <!-- Game 5: Spider-Man Box Opening -->
+        <div class="game-card">
+            <h3>Spider-Man Box Opening</h3>
+            <p>Open boxes to unlock new Spider-Man suits, powers, and special items to enhance your hero's abilities.</p>
+            <a href="https://giorgikevlishvily.github.io/open/spider%20man%20box%20opening.html" target="_blank">Play Now</a>
+        </div>
+    </section>
+
+    <!-- Special Events Section -->
+    <section class="game-gallery">
+        <h2 class="section-title">Special Events</h2>
+
+        <!-- Christmas Event -->
+        <div class="game-card special-event">
+            <h3>Christmas Box Opening</h3>
+            <p>Celebrate the holidays with special Christmas-themed boxes! Unlock unique rewards and festive items.</p>
+            <a href="https://giorgikevlishvily.github.io/open/christmas.html" target="_blank">Play Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Game Hub | All rights reserved</p>
+    </footer>
+</body>
+</html>
